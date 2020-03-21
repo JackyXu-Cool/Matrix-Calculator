@@ -1,0 +1,38 @@
+.label{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Serif";
+    -fx-opacity: 0.8;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1165ef;
+}
+#start,#exit {
+    -fx-font: 16 serif;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 20px;
+    -fx-base: #1266FF;
+
+}
+
+.button {
+    -fx-background-color: #1266ff;
+    -fx-text-fill: #f2f2ff;
+    -fx-cursor: hand;
+}
+#welcomePane {
+ -fx-background-image: url("icon.png");
+ -fx-background-position: center center;
+ -fx-background-size: 300 300;
+}
+
+#greeting {
+  -fx-font-size: 22pt;
+  -fx-text-fill: #000000;
+}
+
+#getSize {
+  -fx-background-color: #6161FF
+}
+
+#selector {
+    -fx-padding: 10px
+}
