@@ -18,16 +18,15 @@ This is a matrix calculator application based on Java. It can be used to solve s
 - Users must have the jdk in their computers. That is the only requirement. 
 
 ## Usage 
-1. Download the file
-2. At the same direcotory of the **myJavaFX.jar**, create a exe or bat or sh file, click edit it, paste the following line:  <br />
-" java --module-path **C:\Users\xujun\Documents\lib\javafx-sdk-11.0.2\lib** --add-modules javafx.controls,javafx.fxml,java.desktop -jar myJavaFX.jar " <br />
+1. Download the file "**Matrix-Calculator-Pro.jar**"
+2. At this same direcotory, create a .exe/.bat/.sh file, click to edit it, paste the following line:  <br />
+" java --module-path **C:\Users\xujun\Documents\lib\javafx-sdk-11.0.2\lib** --add-modules javafx.controls,javafx.fxml,java.desktop -jar Matrix-Calculator-Pro.jar" <br />
 (The part I bold is where the location of your jdk), and the other part will be the same. <br />
 3. Run it!
 
 ## JUnit Test
-- I provide a JUnit test to test the functionality of this matrix calculator,
-feel free to message some more edge cases if you think my tests are not
-comprehensive enough.
+- I provide a JUnit test to test the functionality of this matrix calculator. Feel free to comment under this repository 
+if you think my tests are not comprehensive enough and more edge cases are needed.
 
 ## More information
 For more information on how to run it, this youtube video may help https://www.youtube.com/watch?v=HGHu-SzL-5E&feature=youtu.be <br />
