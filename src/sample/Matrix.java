@@ -1,5 +1,6 @@
 package sample;
 
+
 /**
  * This program is used to calculate the matrix
  * @author Jacky Xu
@@ -224,14 +225,12 @@ public class Matrix {
      * @return eigenvalue in a array
      */
     public static double[] getEigenvalue(double[][] matrix) throws MatrixDoesNotMatchException{
-            int trace = 0;
-            double determinant = Matrix.determinant(matrix);
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = i; j <= i; j++) {
-                    trace += matrix[i][j];
-                }
-            }
-            return solveLinearEquation(1, -trace, (int) determinant);
+        if (matrix.length > 2 || matrix[0].length > 2) {
+            throw new UnsupportedOperationException("Matrices other than 2 * 2 is not supported");
+        }
+            double b = - (matrix[0][0] + matrix[1][1]);
+            double c = Matrix.determinant(matrix);
+            return solveLinearEquation(1.0, b, c);
         }
 
        /**
@@ -384,7 +383,7 @@ public class Matrix {
      * @param c c
      * @return the solution array
      */
-    private static double[] solveLinearEquation(int a, int b, int c) {
+    private static double[] solveLinearEquation(double a, double b, double c) {
         double[] sol = new double[2];
         double testNumber = Math.sqrt(b * b - 4 * a * c);
         if (testNumber >= 0) {
