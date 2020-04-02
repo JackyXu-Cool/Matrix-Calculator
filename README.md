@@ -20,9 +20,10 @@ This is a matrix calculator application based on Java. It can be used to solve s
 ## Usage 
 1. Download the file "**Matrix-Calculator-Pro.jar**"
 2. At this same direcotory, create a .exe/.bat/.sh file, click to edit it, paste the following line:  <br />
-" java --module-path **C:\Users\xujun\Documents\lib\javafx-sdk-11.0.2\lib** --add-modules javafx.controls,javafx.fxml,java.desktop -jar Matrix-Calculator-Pro.jar" <br />
-(The part I bold is where the location of your jdk), and the other part will be the same. <br />
-3. Run it!
+```
+" java --module-path "Your jdk \lib location" --add-modules javafx.controls,javafx.fxml,java.desktop -jar Matrix-Calculator-Pro.jar" 
+```
+
 
 ## JUnit Test
 - I provide a JUnit test to test the functionality of this matrix calculator. Feel free to comment under this repository 
